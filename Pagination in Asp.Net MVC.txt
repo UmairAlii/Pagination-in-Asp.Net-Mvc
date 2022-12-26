@@ -1,0 +1,21 @@
+How to Implement Pagination in Asp.Net MVC
+
+
+Step 1) Download a Nuget Package  PagedList.MVC
+
+Step 2) In the Action Method of the Controller in the Bracket of Controller type (int ? i) 
+
+Step 3) Change model binding IEnumerable to IPagedList<> at the Top
+
+Step 4) Write the Following namespace in View
+
+@using PagedList.Mvc;
+@using PagedList;
+
+Step 4) add the following code below  in View after table tag
+
+@Html.PagedListPager(Model, i => Url.Action("Action Name of Controller", "Controller Name", new { i, search = Request.QueryString["search"] }))
+
+
+
+BY UMAIR CHAUDHRY
