@@ -1,0 +1,7 @@
+Pagination Code Using JQuery
+
+<script>
+$(function() {
+$('table id likhni hai idher').paging({ limit: 10 });
+})
+</script>
